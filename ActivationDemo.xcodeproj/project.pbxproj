@@ -139,6 +139,7 @@
 				TargetAttributes = {
 					A4290F871EEE6A92009A2EE6 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7UL3LRJL93;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,7 +351,8 @@
 			baseConfigurationReference = CF5632EBA5A9BACB5846A604 /* Pods-ActivationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = ActivationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -364,7 +366,8 @@
 			baseConfigurationReference = C7D15F77D55823392E6E0797 /* Pods-ActivationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = ActivationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
