@@ -52,10 +52,6 @@ void ShowResult(NSString *format, ...)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [DJISDKManager appActivationManager].delegate = self;
-    self.activationState = [DJISDKManager appActivationManager].appActivationState;
-    self.aircraftBindingState = [DJISDKManager appActivationManager].aircraftBindingState;
 }
 
 - (void)registerApp
@@ -133,6 +129,11 @@ void ShowResult(NSString *format, ...)
     }else
     {
         NSLog(@"registerAppSuccess");
+
+        [DJISDKManager startConnectionToProduct];
+        [DJISDKManager appActivationManager].delegate = self;
+        self.activationState = [DJISDKManager appActivationManager].appActivationState;
+        self.aircraftBindingState = [DJISDKManager appActivationManager].aircraftBindingState;
     }
     
     ShowResult(@"%@", message);
